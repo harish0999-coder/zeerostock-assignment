@@ -1,0 +1,17 @@
+[
+  { "id": 1, "productName": "Ergonomic Office Chair", "category": "Furniture", "price": 199.99, "supplier": "Global Office Supplies" },
+  { "id": 2, "productName": "Standing Desk", "category": "Furniture", "price": 349.99, "supplier": "WorkSpace Co." },
+  { "id": 3, "productName": "Wireless Keyboard", "category": "Electronics", "price": 49.99, "supplier": "TechZone Ltd." },
+  { "id": 4, "productName": "USB-C Hub", "category": "Electronics", "price": 34.99, "supplier": "TechZone Ltd." },
+  { "id": 5, "productName": "27-inch Monitor", "category": "Electronics", "price": 279.99, "supplier": "ScreenMaster Inc." },
+  { "id": 6, "productName": "Noise Cancelling Headphones", "category": "Electronics", "price": 149.99, "supplier": "SoundWave" },
+  { "id": 7, "productName": "Mechanical Keyboard", "category": "Electronics", "price": 89.99, "supplier": "TechZone Ltd." },
+  { "id": 8, "productName": "Office Desk Lamp", "category": "Lighting", "price": 39.99, "supplier": "BrightHome" },
+  { "id": 9, "productName": "LED Floor Lamp", "category": "Lighting", "price": 79.99, "supplier": "BrightHome" },
+  { "id": 10, "productName": "Notebook (Pack of 5)", "category": "Stationery", "price": 14.99, "supplier": "PaperWorks" },
+  { "id": 11, "productName": "Whiteboard Markers", "category": "Stationery", "price": 9.99, "supplier": "PaperWorks" },
+  { "id": 12, "productName": "Desk Organizer", "category": "Furniture", "price": 24.99, "supplier": "Global Office Supplies" },
+  { "id": 13, "productName": "Laptop Stand", "category": "Electronics", "price": 44.99, "supplier": "TechZone Ltd." },
+  { "id": 14, "productName": "Cable Management Kit", "category": "Accessories", "price": 19.99, "supplier": "NeatDesk" },
+  { "id": 15, "productName": "Webcam 1080p", "category": "Electronics", "price": 69.99, "supplier": "ScreenMaster Inc." }
+]
