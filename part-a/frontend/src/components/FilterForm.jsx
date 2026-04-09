@@ -27,12 +27,11 @@ function FilterForm({ categories, onSearch }) {
           <input
             id="q"
             type="text"
-            placeholder="e.g. keyboard, chair…"
+            placeholder="e.g. keyboard, chair..."
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
         </div>
-
         <div className="filter-field">
           <label htmlFor="category">Category</label>
           <select
@@ -48,9 +47,8 @@ function FilterForm({ categories, onSearch }) {
             ))}
           </select>
         </div>
-
         <div className="filter-field">
-          <label htmlFor="minPrice">Min price (₹)</label>
+          <label htmlFor="minPrice">Min price ($)</label>
           <input
             id="minPrice"
             type="number"
@@ -60,9 +58,8 @@ function FilterForm({ categories, onSearch }) {
             onChange={(e) => setMinPrice(e.target.value)}
           />
         </div>
-
         <div className="filter-field">
-          <label htmlFor="maxPrice">Max price (₹)</label>
+          <label htmlFor="maxPrice">Max price ($)</label>
           <input
             id="maxPrice"
             type="number"
@@ -73,14 +70,9 @@ function FilterForm({ categories, onSearch }) {
           />
         </div>
       </div>
-
       <div className="filter-actions">
-        <button type="submit" className="btn-primary">
-          Search
-        </button>
-        <button type="button" className="btn-secondary" onClick={handleReset}>
-          Reset
-        </button>
+        <button type="submit" className="btn-primary">Search</button>
+        <button type="button" className="btn-secondary" onClick={handleReset}>Reset</button>
       </div>
     </form>
   );
