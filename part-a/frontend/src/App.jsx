@@ -3,7 +3,7 @@ import FilterForm from "./components/FilterForm";
 import ProductTable from "./components/ProductTable";
 import "./App.css";
 
-https://zeerostock-assignment-1-eo6u.onrender.com;
+const API_BASE = "https://assignment-summarizer-1.onrender.com";
 
 function App() {
   const [results, setResults] = useState([]);
@@ -12,14 +12,12 @@ function App() {
   const [searched, setSearched] = useState(false);
   const [error, setError] = useState("");
 
-  // Fetch available categories on mount
   useEffect(() => {
     fetch(`${API_BASE}/categories`)
       .then((res) => res.json())
       .then((data) => setCategories(data))
       .catch(() => setCategories([]));
 
-    // Load all products initially
     handleSearch({ q: "", category: "", minPrice: "", maxPrice: "" });
   }, []);
 
@@ -45,7 +43,7 @@ function App() {
         setResults(data);
       }
     } catch (err) {
-      setError("Could not connect to the server. Make sure the backend is running.");
+      setError("Could not connect to the server.");
       setResults([]);
     } finally {
       setLoading(false);
