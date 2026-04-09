@@ -3,7 +3,7 @@ import FilterForm from "./components/FilterForm";
 import ProductTable from "./components/ProductTable";
 import "./App.css";
 
-const API_BASE = "http://localhost:5000";
+https://zeerostock-assignment-1-eo6u.onrender.com;
 
 function App() {
   const [results, setResults] = useState([]);
