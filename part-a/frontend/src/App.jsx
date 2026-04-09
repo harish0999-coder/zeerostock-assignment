@@ -3,7 +3,7 @@ import FilterForm from "./components/FilterForm";
 import ProductTable from "./components/ProductTable";
 import "./App.css";
 
-const API_BASE = "https://assignment-summarizer-9v3m.onrender.com/";
+const API_BASE = "https://zeerostock-assignment-1-eo6u.onrender.com";
 
 function App() {
   const [results, setResults] = useState([]);
