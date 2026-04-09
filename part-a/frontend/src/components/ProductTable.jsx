@@ -32,9 +32,7 @@ function ProductTable({ results, searched }) {
               <tr key={product.id}>
                 <td className="id-col">{product.id}</td>
                 <td className="name-col">{product.productName}</td>
-                <td>
-                  <span className="badge">{product.category}</span>
-                </td>
+                <td><span className="badge">{product.category}</span></td>
                 <td className="price-col">${product.price.toFixed(2)}</td>
                 <td className="supplier-col">{product.supplier}</td>
               </tr>
