@@ -3,7 +3,7 @@ import FilterForm from "./components/FilterForm";
 import ProductTable from "./components/ProductTable";
 import "./App.css";
 
-const API_BASE = "https://zeerostock-assignment-1-eo6u.onrender.com/";
+const API_BASE = "https://zeerostock-assignment-1-eo6u.onrender.com";
 
 function App() {
   const [results, setResults] = useState([]);
@@ -12,15 +12,15 @@ function App() {
   const [searched, setSearched] = useState(false);
   const [error, setError] = useState("");
 
-  // Fetch available categories on mount
   useEffect(() => {
     fetch(`${API_BASE}/categories`)
       .then((res) => res.json())
       .then((data) => setCategories(data))
       .catch(() => setCategories([]));
 
-    // Load all products initially
-    handleSearch({ q: "", category: "", minPrice: "", maxPrice: "" });
+    setTimeout(() => {
+      handleSearch({ q: "", category: "", minPrice: "", maxPrice: "" });
+    }, 300);
   }, []);
 
   const handleSearch = async (filters) => {
@@ -60,12 +60,9 @@ function App() {
           <p>Search surplus inventory from multiple suppliers</p>
         </div>
       </header>
-
       <main className="app-main">
         <FilterForm categories={categories} onSearch={handleSearch} />
-
         {error && <div className="error-banner">{error}</div>}
-
         {loading ? (
           <div className="loading-wrap">
             <div className="spinner" />
